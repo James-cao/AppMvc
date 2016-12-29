@@ -1,0 +1,11 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+	ViewBag.Title = "Error";
+}
+
+<h1 class="text-danger">Ops!</h1>
+<h2 class="text-danger">Ocorreu um erro, tente novamente ou contate um administrador.</h2>
+
+<h3 class="warning">@Model.Exception.Message</h3>
+@*<h3 class="warning">Mensagem tratada no GlobalErrorHandler: @TempData["ErrorMessage"]</h3>*@
